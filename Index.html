@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Анкета</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/cat1.png"
+      type="image/jpg" >
+  </head>
+  <body>
+    <div class="wrapper">
+    <h1 class="title">Анкета</h1>
+
+    <form>
+
+      <fieldset class="contact">
+        <legend>Данные владелицы(-ьца)</legend>
+
+        <div class="inputfield">
+          <label for="fio">Имя:</label>
+          <input type="text" class="input" placeholder="ФИО" pattern='[A-Za-zА-яа-яЁё\s]+$' required >
+        </div>
+        
+        <div class="inputfield">
+          <label for="phone">Контакты:</label>
+          <input type="text" id="phone"  class="input" placeholder="Телефон" required>
+        </div>
+      </fieldset>
+
+    
+
+      <fieldset>
+        <legend>Данные питомца</legend>
+        
+        <div class="inputfield">
+        <label for="name">Кличка:</label>
+        <input type="text" id="name" class="input" placeholder="Мурка" pattern='[A-Za-zА-яа-яЁё\s]+$' required>
+        </div>
+        
+        <div>
+          
+
+          <div class="inputfield">
+        
+            <label for="she">Самка:</label>
+        <input id="she" type="radio" name="sex">
+        </div>
+
+        <div class="inputfield">
+        
+        <label for="he">Самец:</label>
+        <input id="he" type="radio" name="sex">
+</div>
+      </div>
+      <div class="inputfield">
+        <label>Порода:</label>
+        
+        <div class="custom_select" id="custom_select" >
+        <select  id="sexCheckbox"> 
+          <option class="option" value="Персидская">Персидская</option>
+          <option class="option" value="Мейн-кун">Мейн-кун</option>
+          <option class="option" value="Сибирская">Сибирская</option>
+          <option class="option" value="Невская маскарадная">Невская маскарадная</option>
+          <option class="option" value="Британская короткошерстная">Британская короткошерстная</option>
+          <option class="option" value="Сфинкс">Сфинкс</option>
+          <option class="option" value="Шотландская вислоухая">Шотландская вислоухая</option>
+          <option class="option" value="Абиссинская">Абиссинская</option>
+          <option class="option" value="Бенгальская">Бенгальская</option>
+          <option class="option" value="Сиамская">Сиамская</option>
+          <option class="option" value="Метис" selected>Метис</option>
+          <option class="option" value="Другая">Другая</option>
+        </select></div></div>
+        
+        <div class="inputfield">
+          <label for="breed">Если "Другая", напишите тут:</label>
+        
+        
+        <input type="text" id="breed" class="input" placeholder="Название породы" pattern='[A-Za-zА-яа-яЁё\s]+$'>
+        </div>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+      <legend>Чем питается?</legend>
+    <div class="inputfield">
+<label for="dry" class="check">Сухой корм:</label>
+      <input id="dry" class='checkbox' type="checkbox" checked="checked" name="space" value="1" />
+    
+  </div>
+    
+    <div class="inputfield">
+<label for="water" class="check">Влажный корм:</label>
+      <input id="water" class='checkbox' type="checkbox" name="space" value="2" />
+    </div>
+    
+    <div class="inputfield">
+<label for="nature" class="check">Натуральный корм:</label>
+      <input id="nature" class='checkbox' type="checkbox" name="space" value="3" />
+    </div>
+  </fieldset>
+
+  <div class="inputfield">
+    <label for="textarea">Комментарий:</label>
+    
+      <textarea id="textarea" rows="5" cols="20">
+Если хотите добавить что-то важное, напишите здесь: </textarea>
+  </div>
+
+  <div class="inputfield">
+    <label for="foto" >Приложить фото:</label>
+    <input  id="foto" type="file" required>
+  </div>
+
+  <div class="inputfield">
+    <div id="errorMessage"></div>
+    <input id="submit" class="btn" type="submit" value="Сохранить" >
+  </div>
+  </div>
+
+    <footer>
+      <address>
+  </form>
+        <p>Sviatlana Sheina &copy;</p>
+        <p>
+          &#128386;
+          <a href="mailto:sssheina@gmail.com">sssheina@gmail.com</a>.
+        </p>
+      </address>
+    </footer>
+    
+  </body>
+</html>
