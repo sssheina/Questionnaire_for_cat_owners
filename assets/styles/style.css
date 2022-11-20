@@ -68,6 +68,10 @@ textarea{
   border-radius: 3px;
   transition: all 0.3s ease;
 }
+input:required:valid{ 
+  border-color: green;
+}
+
 
 #sexCheckbox:focus,
 .input:focus,
